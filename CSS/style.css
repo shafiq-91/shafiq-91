@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background-color: #dddddd7c;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 255, 0.267);
+    border-radius: 50px;
+}
+
+section h2 , section h2 span{
+    font-size: 55px;
+    padding-bottom: 6vw;
+    padding-top: 4vw;
+    text-align: center;
+}
+
+span{
+    color: rgba(0, 0, 255, 0.466);
+}
+
+button,img{
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover,img:hover{
+    scale: 1.06;
+}
+
+button{
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 255, 0.466);
+}
+
+section{
+    height: 100vh;
+}
+
+section:nth-child(even){
+    background: #dddddd2c;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appeare {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section:nth-child(odd){
+    animation: appeare linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+section:first-child{
+    animation: none !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    padding: 0 15px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 255, 0.466);
+}
+
+.logo{
+    padding: 15px;
+    font-size: 1.75rem;
+}
+
+.logo a span{
+    animation: logo .75s infinite;
+}
+
+.logo a span:nth-child(2){animation-delay: .125s;}
+.logo a span:nth-child(3){animation-delay: .25s;}
+.logo a span:nth-child(4){animation-delay: .5s;}
+.logo a span:nth-child(5){animation-delay: .625s;}
+.logo a span:nth-child(6){animation-delay: .675s;}
+
+@keyframes logo {
+    from{
+        color: #000;
+    }
+
+    to{
+        color: rgba(0, 0, 255, 0.466);
+    }
+}
+
+nav a {
+    padding: 15px;
+}
+
+nav a:hover{
+    color: rgba(0, 0, 255, 0.466);
+    padding-bottom: 5px;
+    border-radius: 0;
+    border-bottom: 3px solid rgba(0, 0, 255, 0.466);
+}
+
+
+.home,.c,.skill-set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section h1 span{
+    font-size: 2rem;
+}
+
+.hero-img img,.me-img img , .me-img-m img{
+    width: 31vw;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 255, 0.466);
+}
+
+.hero-content,.me-info{
+    width: 35%;
+}
+
+.hero-content p , .me-info p{
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+}
+
+.hero-btn button , .me-btn button{
+    margin: 5px;
+}
+
+.abaility{
+    height: 170px;
+    font-size: 1rem;
+    width: 350px;
+    margin: 30px;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 255, 0.466);
+    background-color: #dddddd2c;
+    transition: .2s ease-in-out;
+}
+
+.abaility:hover , .project-set:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    scale: 1.06;
+}
+
+.abaility img{
+    width: 85px;
+}
+
+.skill{
+    height: 150vh;
+}
+
+.project-set {
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 360px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: .3s ease-in-out;
+    border: 3px solid rgba(0, 0, 255, 0.466);
+}
+
+.project-set img{
+    margin: 20px;
+    margin-top: 8px;
+    width: 480px;
+    border: 3px solid rgba(0, 0, 255, 0.466);
+}
+
+.contact form{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: 25%;
+}
+
+.contact form input , .contact form textarea , .contact form button{
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid rgba(0, 0, 255, 0.466);
+    width: 350px;
+    padding-left: 10px;
+    height: 55px;
+    outline: none;
+    resize: none;
+    transition: .3s ease-in-out;
+}
+.contact form input:hover{
+    transform: translateY(-10px);
+}
+
+.contact form textarea{
+    height: 200px;
+}
+
+.c-form{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    border-top: 3px solid rgba(0, 0, 255, 0.466);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.txt p , .txt p span, .link-f a , .link-f a span{
+    font-size: 1rem;
+}
+
+.link-f a {
+    padding: 0 10px 0 10px;
+}
+
+.scroll-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scroll-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.466);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.scroll-arrow:hover {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+
+@media (min-width:769px) {
+    .me-img-m{
+        display: none;
+    }    
+}
+
+@media (max-width: 768px) {
+
+    section{
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .skill{
+        height: auto;
+        animation: none !important;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    nav button{
+        padding: 9px;
+    }
+
+    .home,.c,.skill-set, .project-set{
+        flex-direction: column;
+    }
+
+    .hero-img , .me-img {
+        margin-top: 70px;
+    }
+
+    .hero-img img , .me-img-m img{
+        margin-top: 20px;
+        width: 50vw;
+    }
+
+    .abaility{
+        width: 300px;
+    }
+
+    .abaility p , .abaility p span{
+        font-size: 1.1rem;
+    }
+
+    .project-set{
+        width: 330px;
+    }
+
+    .me-img img{
+        display: none;
+    }
+
+    .hero-content , .me-info{
+        width: 100%;
+    }
+
+    .hero-content button , .hero-content button span , .me-info button , .me-info button span{
+        font-size: 6vw;
+    }
+
+    .project-set{
+        width: 350px;
+        height: 300px;
+    }
+
+    .project-set img{
+        width: 300px;
+    }
+
+    .contact{
+        padding-bottom: 30px;
+    }
+
+    .contact form{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contact form input , .contact form button{
+        width: 260px;
+    }
+
+    .contact form textarea{
+        height: 150px;
+        width: 260px;
+        padding: 10px;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    .link-f a, .link-f a span{
+        display: none;
+    }
+
+
+}
