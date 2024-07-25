@@ -67,7 +67,7 @@ I specialize in creating dynamic and engaging web interfaces. Despite encounteri
 
 I would love to hear from you! Feel free to reach out to me through the following platforms:
 
-- 📧 Email: [shajol234sj@gmail.com](mailto:shafiqul@example.com)
+- 📧 Email: [shajol234sj@gmail.com](mailto:shajol234sj@gmail.com)
 - 🌐 Portfolio: [Shafiqul Islam](https://shafiq91.vercel.app/)
 
 ---
